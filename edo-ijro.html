@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edo.ijro.uz - Foydalanish Qo'llanma va Video Darslar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body, html {
+      height:100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a192f, #1e3a5f, #2c5364);
+      color: #ffffff;
+      overflow-y: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    .center-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      margin: 40px 0;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: all 0.35s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-15px);
+      background: rgba(255,255,255,0.18);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+    }
+
+    .card i {
+      font-size: 5rem;
+      margin-bottom: 25px;
+      color: #2196f3; /* Edo uchun ko'k rang tanladim */
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .hidden-link {
+      display: inline-block;
+      padding: 16px 50px;
+      background: #2196f3;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    .hidden-link:hover {
+      background: #1976d2;
+      transform: scale(1.05);
+    }
+
+    .videos-section {
+      margin-top: 80px;
+    }
+
+    .videos-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 30px;
+    }
+
+    .video-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    .video-item iframe {
+      width: 100%;
+      height: 240px;
+      border: none;
+    }
+
+    .video-item p {
+      padding: 15px;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 60px auto 0;
+      padding: 15px 40px;
+      background: #2196f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .back-btn:hover { background: #1976d2; }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      .card { padding: 30px 20px; }
+      .card i { font-size: 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Edo.ijro.uz Platformasi</h1>
+    <p>Ижро интизоми идоралараро ягона электрон тизими – hujjat aylanishi, topshiriqlar nazorati va ijro monitoringi uchun</p>
+  </header>
+
+  <div class="center-content">
+
+    <div class="grid">
+
+      <!-- Asosiy platforma ssilkasi (yashirin, chiroyli tugma orqasida) -->
+      <div class="card" onclick="window.open('https://edo.ijro.uz/', '_blank')">
+        <i class="fas fa-file-signature"></i>
+        <h2>Rasmiy Tizimga Kirish</h2>
+        <p>edo.ijro.uz — Idoralararo hujjat aylanishi va ijro intizomi nazorati uchun yagona elektron platforma. Kirish, hujjat yaratish va topshiriqlar ijrosini kuzatish.</p>
+        <div class="hidden-link">Tizimga o'tish →</div>
+      </div>
+
+      <!-- Qo'llanma va video bo'limi -->
+      <div class="card">
+        <i class="fas fa-book-open"></i>
+        <h2>Foydalanish Qo'llanmasi</h2>
+        <p>Tizimdan qanday foydalanish, ro'yxatdan o'tish, hujjat ro'yxatga olish, topshiriq belgilash, bajarilgan deb belgilash va hisobot olish bo'yicha batafsil qo'llanmalar va video darslar to'plami.</p>
+        <div class="hidden-link">Qo'llanma va darslarni ko'rish</div>
+      </div>
+
+    </div>
+
+    <!-- Video darsliklar to'plami (real YouTube'dan topilganlar) -->
+    <div class="videos-section">
+      <h2>Video Darsliklar va Qo'llanmalar</h2>
+      <div class="video-grid">
+
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/DXLQJ6aaNzE" allowfullscreen></iframe>
+          <p>Edo.Ijro.Uz dan foydalanish qisqa qo'llanmasi (Namangan davlat universiteti misolida)</p>
+        </div>
+
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/XktTjDEx2ZQ" allowfullscreen></iframe>
+          <p>Lesson 1: Devonxona interfeysi bilan tanishuv (chiquvchi, kiruvchi, ichki hujjatlar)</p>
+        </div>
+
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/cbFPreYvvOI" allowfullscreen></iframe>
+          <p>Lesson 2: Devonxona sozlamalari (hujjat turlari, yetkazish usullari)</p>
+        </div>
+
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/YVY_9tjURnE" allowfullscreen></iframe>
+          <p>Lesson 3: Masalalar, hujjat shablonlari va raqamlar sozlamalari</p>
+        </div>
+
+        <!-- Yana qo'shmoqchi bo'lsangiz playlistdan oling: https://www.youtube.com/playlist?list=PLtK0gTNIdIym92r2yt3IJYK2RKC-mvnTT -->
+      </div>
+    </div>
+
+    <a href="index.html" class="back-btn">Asosiy sahifaga qaytish</a>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mening Raqamli Kompyuterim</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body, html {
+      height:100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a192f, #1e3a5f, #2c5364);
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .center-grid {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .icon {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.35s ease;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .icon:hover {
+      transform: translateY(-12px) scale(1.08);
+      background: rgba(255,255,255,0.18);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+    }
+
+    .icon i {
+      font-size: 4.5rem;
+      margin-bottom: 15px;
+    }
+
+    .icon p {
+      font-size: 1.1rem;
+      line-height: 1.3;
+      max-width: 140px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    @media (max-width: 768px) {
+      .center-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .icon {
+        width: 160px;
+        height: 160px;
+      }
+      .icon i { font-size: 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center-grid">
+
+    <div class="icon" onclick="window.location.href='raqamli-mahalla.html'">
+      <i class="fas fa-home" style="color: #4caf50;"></i>
+      <p>Raqamli Mahalla</p>
+    </div>
+
+    <div class="icon" onclick="window.location.href='e-huquqshunos.html'">
+      <i class="fas fa-gavel" style="color: #f44336;"></i>
+      <p>E-huquqshunos</p>
+    </div>
+
+    <div class="icon" onclick="window.location.href='edo-ijro.html'">
+      <i class="fas fa-file-signature" style="color: #2196f3;"></i>
+      <p>Edo.ijro.uz</p>
+    </div>
+
+    <div class="icon" onclick="window.location.href='texnik-xizmat.html'">
+      <i class="fas fa-tools" style="color: #ff9800;"></i>
+      <p>Texnik hizmat dasturlari</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
